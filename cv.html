@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Patrick Silva Fernandes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fundo suave */
+            color: #444; /* Cor do texto mais suave */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #FF7043; /* Laranja suave */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        header .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background-color: #333; /* Cor de fundo do menu */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideDown 1s ease-in-out;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FF7043; /* Laranja suave */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+        h1, h2 {
+            color: #FF7043; /* Laranja suave */
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .skill {
+            background: #FF7043; /* Laranja suave */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .expertise-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .expertise-item {
+            background: #FFFFFF;
+            border: 2px solid #FF7043; /* Laranja suave */
+            border-radius: 15px;
+            padding: 25px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .expertise-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .expertise-item i {
+            font-size: 40px;
+            color: #FF7043; /* Laranja suave */
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s ease-in;
+        }
+        a {
+            color: #FF7043; /* Laranja suave */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .skills {
+                flex-direction: column;
+            }
+
+            .expertise-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Patrick Silva Fernandes</div>
+        <p>Designer Júnior | Criatividade & Design para Conectar</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#expertise">Áreas de Expertise</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="section" id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou um designer júnior com paixão por criar experiências visuais impactantes. Minha abordagem combina criatividade, funcionalidade e um olhar atento para detalhes. Com habilidades em design digital e gráfico, estou pronto para contribuir com a Petz, criando soluções que encantem os clientes e promovam a marca.</p>
+        </section>
+
+        <section class="section" id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">Design Gráfico</div>
+                <div class="skill">Adobe Photoshop</div>
+                <div class="skill">Adobe Illustrator</div>
+                <div class="skill">Design Responsivo</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">Prototipagem</div>
+                <div class="skill">Edição de Imagens</div>
+            </div>
+        </section>
+
+        <section class="section" id="expertise">
+            <h2>Áreas de Expertise</h2>
+            <div class="expertise-container">
+                <div class="expertise-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Design Gráfico</h3>
+                    <p>Criação de materiais visuais com foco em impacto e estética.</p>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Design Responsivo</h3>
+                    <p>Layouts que se adaptam a qualquer dispositivo, garantindo a melhor experiência.</p>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-palette"></i>
+                    <h3>Prototipagem</h3>
+                    <p>Desenvolvimento de protótipos interativos para testes e validação.</p>
+                </div>
+                <div class="expertise-item">
+                    <i class="fas fa-image"></i>
+                    <h3>Edição de Imagens</h3>
+                    <p>Processamento e ajustes em imagens para qualidade superior.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo para conversarmos mais sobre design e como posso contribuir com suas ideias:</p>
+            <p>Email: <a href="mailto:psfernandes@ymail.com">psfernandes@ymail.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Patrick Silva Fernandes. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- FontAwesome Icons for Expertise Section -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
